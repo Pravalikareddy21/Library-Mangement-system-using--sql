@@ -6,8 +6,6 @@
 The **Library Management System** is a basic-to-intermediate SQL project that manages books, library members, and book borrowing activities.  
 It demonstrates how to design a relational database, populate it with data, and run queries to retrieve useful information.
 
----
-
 ## 🎯 Features
 - Store and manage book details (title, author, genre, copies available, etc.)
 - Maintain member records (name, email, join date)
@@ -19,7 +17,6 @@ It demonstrates how to design a relational database, populate it with data, and 
   - Updating available copies after borrowing
   - Deleting returned borrow records
 
----
 
 ## 🗄 Database Structure
 ### **Tables**
@@ -44,12 +41,3 @@ It demonstrates how to design a relational database, populate it with data, and 
    - `borrow_date`
    - `return_date`
 
----
-
-## 💾 Sample Queries
-
-### 1️⃣ Get all available books
-```sql
-SELECT title, author, available_copies
-FROM Books
-WHERE available_copies > 0;
